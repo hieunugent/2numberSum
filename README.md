@@ -1,4 +1,4 @@
-# 2numberSum
+# TwonumberSum
   Write a function that take in a non-empty array of distinct integers and an integer representing a target sum
 if any two numbers in the input array sum up to  the target sum then it should be return them in an array.
 assume that as most one pair solution.
