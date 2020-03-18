@@ -33,11 +33,11 @@ output : [-1,1]
 - space : using left and right pointer is O(1)
 # writing the test case using Junit
 - Using Junit test which will need to download file save in folder JUNIT
-      + junit.jar
-      + hamcrest-core-1.3.jar
+      - junit.jar
+      - hamcrest-core-1.3.jar
 - setup the classpath
-      + export CLASSPATH= "$CLASSPATH:/dir/to/JUNIT/*  "
+      - export CLASSPATH= "$CLASSPATH:/dir/to/JUNIT/*  "
 - Complier the TEST file
-      + javac  test.java
+      - javac  test.java
 - excutive the class file 
-      + java   test class name;
+      - java   test class name;
