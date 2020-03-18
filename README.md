@@ -31,3 +31,13 @@ output : [-1,1]
 - if exit loop and no result should return empty array.
 - Time Complexity : sort assume that using binary sort O(NLogN) for this loop also at O(N)
 - space : using left and right pointer is O(1)
+# writing the test case using Junit
+- Using Junit test which will need to download file save in folder JUNIT
+      + junit.jar
+      + hamcrest-core-1.3.jar
+- setup the classpath
+      + export CLASSPATH= "$CLASSPATH:/dir/to/JUNIT/*  "
+- Complier the TEST file
+      + javac  test.java
+- excutive the class file 
+      + java   test class name;
