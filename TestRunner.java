@@ -5,13 +5,19 @@ import org.junit.runner.notification.Failure;
 public class TestRunner {
    public static void main(String[] args) {
       Result result = JUnitCore.runClasses(Testcase.class);
-      System.out.println(result.wasSuccessful());
 
-      for (Failure failure : result.getFailures()) {
-         System.out.println(failure.toString());
+      //System.out.println(result.wasSuccessful());
+      if(!result.wasSuccessful())
+      {
+        System.out.println("There is " + result.getFailureCount() + " failure over " + result.getRunCount() + " tests case");
+        for (Failure failure : result.getFailures()) {
+           System.out.println(failure.toString());
+        }
       }
-      System.out.println(result.wasSuccessful());
-
-
+      else
+      {
+        System.out.println("all tests Pass");
+        System.out.println("RunTime: "+result.getRunTime() + " ms");
+      }
    }
 }
